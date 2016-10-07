@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %}
+
+    {% block content %}
+      <h1>New post</h1>
+        <form method="POST" class="post-form">{% csrf_token %}
+            {{ form.as_p }}
+<div class="row">
+  <div class="col-xs-6 col-md-3">
+    <a href="http://e1.365dm.com/15/12/16-9/20/tyson-fury-boxing_3386772.jpg?20151210150313" class="thumbnail">
+      <img src="http://e1.365dm.com/15/12/16-9/20/tyson-fury-boxing_3386772.jpg?20151210150313" alt="...">
+    </a>
+  </div>
+            <button type="submit" class="save btn btn-default">Save</button>
+        </form>
+    {% endblock %}
